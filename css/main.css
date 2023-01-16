@@ -3,6 +3,8 @@
   --fb-logo-color: #3a5693;
   --tumblr-logo-color: #32455a;
   --twitter-blue: #1ea1f1;
+  --duolingo-green: #85db1a;
+  --buzzfeed-red: #ed1c11;
 }
 .header{
   display: flex;
@@ -15,14 +17,12 @@
 .search-bar{
   display: flex;
   margin-left: 150px;
-}
-
-.search-bar {
   height: 40px;
 }
 
 .search-bar > input{
   width: 250px;
+  border-radius: 2px;
 }
 
 .search-btn{
@@ -59,3 +59,58 @@
 .c{
   background-color: var(--tumblr-logo-color);
 }
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.nav-bar > div{
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+  background-color: var(--twitter-blue);
+}
+
+.cinema{
+  background-color: var(--duolingo-green);
+}
+
+.magazine{
+  background-color: var(--fb-logo-color);
+}
+
+.css-aut{
+  background-color: #1ea1f1;
+}
+
+.top-menu{
+  background-color: #f6a000;
+}
+
+.archives{
+  background-color: var(--buzzfeed-red);
+}
+
+.contact{
+  background-color: gray;
+  width: 340px;
+}
+
+.top-stories{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 80px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
